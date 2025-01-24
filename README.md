@@ -1,20 +1,27 @@
 # 3DS battery patches
-
 ## Home Menu
-**Battery percent in status bar (statusbatpercent)**  
-This patch replaces date in statusbar with battery percent. It is not possible to display "%" character, so it shows battery percent as ":35:" instead.
-
-![Screenshot](https://github.com/nowrep/3ds-patches/blob/master/doc/screenshot.jpg?raw=true)
 
 **Battery icon in status bar with 25% bars (statusbaticon)**  
 This patch makes the battery icon display each bar as 25% of battery charge.
+
+<hr />
+
+**Battery percent in status bar (statusbatpercent)**  
+This patch replaces date in statusbar with battery percent.
+
+![Preview](https://raw.githubusercontent.com/LittleFIve233/3ds-battery-patches/refs/heads/master/preview.png)
+
+> It is not possible to display "%" character, so it shows battery percent as ":35:" instead.
+> 
+> If you have CHSSytem installed, you can use the % patch
+
 ## Building
-- Dumping extheader.bin from the 3DS and put it in the repo's root
+1.Dumping extheader.bin from the 3DS and put it in the repo's root
 
-- installing [Python](https://www.python.org/)
+2.Installing [Python](https://www.python.org/)
 
-- ``pip install suppress``
+3.``pip install suppress``
 
-- Downloading [armips.exe](https://buildbot.orphis.net/armips/) to environment
+4.Downloading [armips.exe](https://github.com/LittleFIve233/3ds-battery-patches/blob/master/armips.exe) to environment
 
-- ``make``
+5.Run ``make``
